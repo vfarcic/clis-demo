@@ -1,0 +1,5 @@
+values:
+  replicas: 1
+  ingress:
+    className: traefik
+    host: ping.34.138.210.209.nip.io

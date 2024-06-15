@@ -1,0 +1,21 @@
+image:
+  repository: ghcr.io/vfarcic/silly-demo
+  tag: 1.4.163
+ingress:
+  host: devopstoolkitseries.com
+db:
+  enabled: false
+postgresql:
+  global:
+    persistence:
+      enabled: false
+  auth:
+    postgresPassword: postgres
+  primary:
+    initdb:
+      scripts:
+        00_init_script.sh: |
+          export PGPASSWORD=$POSTGRES_PASSWORD
+          psql -U postgres -c 'CREATE DATABASE "silly-demo";'
+schemahero:
+  enabled: false

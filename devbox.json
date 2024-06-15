@@ -1,20 +1,23 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.11.1/.schema/devbox.schema.json",
   "packages": [
-    "eza@0.18.17",
+    "kind@0.22.0",
+    "gh@2.44.1",
+    "kubectl@1.29.2",
     "bat@0.24.0",
-    "fzf@0.53.0",
-    "zoxide@0.9.4",
-    "thefuck@3.32",
-    "kind@0.23.0",
+    "timoni@0.20.0",
+    "kubernetes-helm@3.14.3",
+    "yq-go@4.43.1",
     "jq@1.7.1",
-    "yq-go@4.44.1",
+    "earthly@0.8.11",
+    "go@1.22.3",
     "teller@1.5.6",
-    "gh@2.50.0",
-    "gum@0.14.1"
+    "cosign@2.2.4"
   ],
   "shell": {
-    "init_hook": [],
-    "scripts":   {}
+    "init_hook": [
+      "alias cat='bat --paging never --theme DarkNeon --style plain'",
+      "PS1=\"➜ \""
+    ],
+    "scripts": {}
   }
 }
