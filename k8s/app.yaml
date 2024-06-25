@@ -4,8 +4,6 @@ metadata:
   labels:
     app.kubernetes.io/name: silly-demo
   name: silly-demo
-  annotations:
-    something: else
 spec:
   replicas: 2
   selector:
