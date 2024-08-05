@@ -1,21 +1,6 @@
-# Silly Demo
+# Demo Manifests and Code Used in DevOps Toolkit Videos
 
-# Common
-
-```sh
-kubectl create namespace a-team
-```
-
-## App Alone
-
-```sh
-kubectl apply --filename k8s
-```
-
-## App with CNPG PostgreSQL
-
-```sh
-helm upgrade --install cnpg cloudnative-pg \
+[![Why I Can't Live Without These 10 CLIs!](https://img.youtube.com/vi/7ItANF7eytU/0.jpg)](https://youtu.be/7ItANF7eytU)l cnpg cloudnative-pg \
     --repo https://cloudnative-pg.github.io/charts \
     --namespace cnpg-system --create-namespace --wait
 
